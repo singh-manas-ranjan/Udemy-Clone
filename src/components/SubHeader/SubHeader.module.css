@@ -16,7 +16,7 @@
     font-weight: 400;
 }
 
-.ovalBtnContainer {
+.subNavigationContainer {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -28,7 +28,7 @@
     color: #2d2f31;
 }
 
-.oval {
+.subHeadingContainer {
     cursor: pointer;
     flex: 0 0 auto;
     min-width: 100px;
@@ -46,33 +46,33 @@
     row-gap: .2rem;
 }
 
-.oval :hover{
+.subHeadingContainer :hover{
     color: #2d2f31;
 }
 
-.oval:first-child{
+.subHeadingContainer:first-child{
     color: #2d2f31;
     text-decoration: underline;
     text-underline-offset: 1.5rem;
     text-decoration-thickness: .1rem;
 }
 
-.oval:first-child:hover{
+.subHeadingContainer:first-child:hover{
     color: #55585c;
 
 }
 
-.overBtnTitle{
+.subHeadingLinkTitle{
     font-size: 1rem;
     width: 100%;
 }
 
-.ovalBtnPara{
+.subHeadingContainerBtnPara{
     width: 100%;
 }
 
 @media screen and (max-width: 1340px) {
-    .ovalBtnContainer,.headingContainer {
+    .subNavigationContainer,.headingContainer {
         width: 100%;
         padding-inline: 20px;
     }
@@ -80,7 +80,7 @@
 
 @media (max-width: 1024px) {
 
-    .oval{
+    .subHeadingContainer{
         height: 55px;
         font-size: 0.7rem;
     }
@@ -100,7 +100,7 @@
         line-height: 1.4rem;
     }
 
-    .oval:first-child{
+    .subHeadingContainer:first-child{
         color: #2d2f31;
         text-decoration: none;
     }
@@ -108,11 +108,11 @@
 }
 
 @media screen and (max-width: 342px) {
-    .oval:not(:first-child){
+    .subHeadingContainer:not(:first-child){
         display: none;
     }
 
-    .overBtnTitle{
+    .subHeadingLinkTitle{
         font-size: 1.2rem;
     }
 }

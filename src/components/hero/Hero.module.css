@@ -82,13 +82,13 @@
     }
 }
 
-@media screen and (max-width: 784px) {
+@media screen and (max-width: 800px) {
 
     .heroContentContainer{
         left: 22px;
         top: 14px;
         height: 134px;
-        width: 280px;
+        width: 300px;
         overflow: hidden;
         row-gap: 0rem;
         padding: .5rem;
@@ -100,7 +100,7 @@
     }
 
     .subHeading{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
