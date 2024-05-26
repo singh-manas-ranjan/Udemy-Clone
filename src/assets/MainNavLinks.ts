@@ -1,0 +1,1 @@
+export default ["Log in", "Sign up", "Plans & Pricing"];

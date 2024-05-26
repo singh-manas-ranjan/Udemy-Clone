@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: calc(100%-4.8rem);
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: 100%;
+}
+
+.logo{
+    background: url("/logo.png");
+    width: 110px;
+    height: 42px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.categoriesBtn{
+    cursor: pointer;
+    font-size: 1rem;
+    color: #2d2f31;
+
+}
+
+.categoriesBtn:hover{
+    color: blueviolet;
+}
+
+.outerNavItemsContainer{
+    display: flex;
+    align-items: center;
+    width: 94%;
+    justify-content: space-around;
+}
+
+.leftMenuContainer{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.searchContainer{
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    padding: .5rem;
+    outline-style: solid;
+    outline-width: .1px;
+    outline-color: black;
+    width: 80%;
+    height: 3rem;
+
+}
+
+.search{
+    width: 30px;
+    height: 30px;
+    /* background: url("/search.svg"); */
+    /* background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
+    display: grid;
+    place-items: center;
+}
+
+.collapsedSearchIcon{
+    display: none;
+}
+
+.searchBar{
+    background: none;
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 2rem;
+    padding-left: .5rem;
+    font-size: .9rem;
+}
+
+.rightMenuContainer{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.actionBtnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.actionBtn{
+    all: unset;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.language{
+    display: flex;
+    align-items: center;
+    outline-style: solid;
+    outline-width: .1px;
+    outline-color: black;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+}
+
+.loginBtn{
+    background-color: #fff;
+    outline-style: solid;
+    outline-width: .1px;
+    outline-color: black;
+}
+
+.signUpBtn{
+    color: #fff;
+    background-color: #2d2f31;
+}
+
+.middleNavLinkContainers{
+    display: flex;
+    width: 32%;
+    justify-content: space-around;
+}
+
+.middleNavLink{
+    display: block;
+    text-decoration: none;
+    color: #2d2f31;
+    font-size: .9rem;
+}
+
+.middleNavLink:hover{
+    color: blueviolet;
+}
+
+.collapsedSearch{
+    display: none;
+}
+.hamMenu{
+    display: none;
+    cursor: pointer;
+}
+
+/* Nav-Item-phone */
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background-color: #000000a5;
+    display: none;
+}
+
+.navMenuContainer{
+    background-color: #fff;
+    padding: 1rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.enabled{
+    display: initial;
+}
+
+.disabled{
+    display: none;
+}
+
+.navItems{
+    display: grid;
+    gap: 1.2rem;
+    padding: 1rem;
+    font-size: 1.01rem;
+    color: #5624d0;
+    box-shadow: 0 1.5px 1.5px -1.5px rgba(0, 0, 0, 0.679);
+    width: 100%;
+}
+
+.mainNavigation{
+    position: relative;
+}
+
+.closeBtn{
+    background-color: #fff;
+    position: absolute;
+    top: -10px;
+    right: -6rem;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .outerNavItemsContainer{
+        justify-content: space-evenly;
+    }
+    .middleNavLink:last-child{
+        display: none;
+    }
+
+    .leftMenuContainer{
+        width: 35%;
+    }
+
+    .searchContainer{
+        width: 70%;
+    }
+
+    .middleNavLinkContainers{
+        justify-content: space-around;
+        width: 28%;
+    }
+
+    .rightMenuContainer{
+        width: 30%;
+    }
+ }
+
+
+@media screen and (max-width: 980px) {
+
+    .leftMenuContainer{
+        width: 40%;
+        gap: .5rem;
+    }
+
+    .middleNavLinkContainers{
+        justify-content: center;
+        width: 15%;
+    }
+
+    .middleNavLink:nth-child(2){
+        display: none;
+    }
+
+    .rightMenuContainer{
+        width: 35%;
+        column-gap: .5rem;
+    }
+
+    .actionBtnContainer{
+        column-gap: .5rem;
+    }
+ }
+
+
+ @media screen and (max-width: 840px) {
+
+    .navbar{
+        height: 55px;
+    }
+
+    .hamMenu{
+        position: absolute;
+        display: block;
+    }
+
+    .logo{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90px;
+        height: 30px;
+    }
+
+    .outerNavItemsContainer{
+        padding: 0;
+        width: initial;
+    }
+
+    .leftMenuContainer{
+        display: none;
+    }
+
+    .middleNavLinkContainers{
+        display: none;
+    }
+
+    .middleNavLink:first-child{
+        display: none;
+    }
+    .actionBtnContainer{
+        display: none;
+    }
+
+    .rightMenuContainer{
+        width: fit-content;
+        display: grid;
+        place-items: center;
+    }
+
+    .collapsedGroupIcon{
+        width: 48px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+
+    }
+
+    .collapsedIconGroup{
+        position: absolute;
+        top: 3px;
+        right: 5px;
+        display: flex;
+    }
+
+    .overlayActive{
+        display: initial;
+    }
+
+    .navMenuContainer{
+        width: 50%;
+    }
+
+    .closeBtn{
+        display: grid;
+        place-items: center;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .logo{
+        background: url("/logo.png");
+        width: 70px;
+        height: 30px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .collapsedGroupIcon{
+        width: 30px;
+        height: 48px;
+        display: grid;
+        place-items: center;
+
+    }
+    .btnIconSize{
+        width: 20px;
+    }
+}
+

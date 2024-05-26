@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.headingContainer{
+    margin-top: 48px;
+    width: calc(100vw - 226px);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subHeaderPara{
+    color: #6a6f73;
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.ovalBtnContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 10px;
+    width: calc(100vw - 226px);
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #2d2f31;
+}
+
+.oval {
+    cursor: pointer;
+    flex: 0 0 auto;
+    min-width: 100px;
+    width: fit-content;
+    padding-inline: .8rem;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6a6f73;
+    white-space: nowrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: .2rem;
+}
+
+.oval :hover{
+    color: #2d2f31;
+}
+
+.oval:first-child{
+    color: #2d2f31;
+    text-decoration: underline;
+    text-underline-offset: 1.5rem;
+    text-decoration-thickness: .1rem;
+}
+
+.oval:first-child:hover{
+    color: #55585c;
+
+}
+
+.overBtnTitle{
+    font-size: 1rem;
+    width: 100%;
+}
+
+.ovalBtnPara{
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .ovalBtnContainer,.headingContainer {
+        width: 100%;
+        padding-inline: 20px;
+    }
+
+    .oval{
+        height: 55px;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .headingContainer > h1{
+        font-size: 1.7rem;
+        color: #2d2f31;
+    }
+
+    .headingContainer > p{
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .oval:first-child{
+        color: #2d2f31;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (max-width: 342px) {
+    .oval:not(:first-child){
+        display: none;
+    }
+
+    .overBtnTitle{
+        font-size: 1.2rem;
+    }
+}
+
