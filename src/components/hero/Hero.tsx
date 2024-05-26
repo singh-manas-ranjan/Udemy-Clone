@@ -2,7 +2,8 @@ import styles from "./Hero.module.css";
 const Hero = () => {
   return (
     <header className={styles.hero}>
-      <div className={styles.heroImg}>
+      <div>
+        <img src="./heroBackground.jpg" alt="" className={styles.heroImg} />
         <div className={styles.heroContentContainer}>
           <h2 className={styles.mainHeading}>
             Last day to see where the deals lead
