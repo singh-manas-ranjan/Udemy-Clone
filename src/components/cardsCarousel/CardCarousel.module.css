@@ -1,0 +1,16 @@
+.carousel{
+    margin-block: 20px;
+    height: fit-content;
+    width: calc(100vw - 226px);
+    padding-block: 1rem;
+}
+
+.carouselItem{
+    padding-inline: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .carousel{
+        width: 100%;
+    }
+}

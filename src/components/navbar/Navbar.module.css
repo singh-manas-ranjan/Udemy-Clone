@@ -174,11 +174,15 @@
 
 .navMenuContainer{
     background-color: #fff;
-    padding: 1rem;
+    padding: .5rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
     row-gap: .5rem;
+}
+
+.mainNavigation{
+    position: relative;
 }
 
 .enabled{
@@ -192,22 +196,37 @@
 .navItems{
     display: grid;
     gap: 1.2rem;
-    padding: 1rem;
+    padding: .8rem 1rem;
     font-size: 1.01rem;
-    color: #5624d0;
     box-shadow: 0 1.5px 1.5px -1.5px rgba(0, 0, 0, 0.679);
     width: 100%;
 }
 
-.mainNavigation{
-    position: relative;
+.mainNavLinks{
+    color: #5624d0;
+}
+
+.mainNavLinks:visited{
+    color: #5624d0;
+}
+
+.mostPopularTitle{
+    color: #6a6f73;
+    padding-left: 1rem;
+    margin-top: .5rem;
+    font-size: .9rem;
+    letter-spacing: .05rem;
+}
+
+.mostPopularLinks{
+    color: #2d2f31;
 }
 
 .closeBtn{
     background-color: #fff;
     position: absolute;
-    top: -10px;
-    right: -6rem;
+    top: 5px;
+    right: -5rem;
     width: 50px;
     height: 50px;
     z-index: 999;

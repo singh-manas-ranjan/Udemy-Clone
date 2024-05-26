@@ -102,7 +102,11 @@ const Navbar = ({
             <ul className={styles.navItems}>
               {mainNavLinks.map((link, idx) => (
                 <li key={idx}>
-                  <Link key={idx} to={link.trim().toLowerCase()}>
+                  <Link
+                    key={idx}
+                    to={link.trim().toLowerCase()}
+                    className={styles.mainNavLinks}
+                  >
                     {link}
                   </Link>
                 </li>
@@ -110,12 +114,14 @@ const Navbar = ({
             </ul>
           </div>
           <div className={styles.mostPopularLinksContainer}>
+            <h4 className={styles.mostPopularTitle}>Most popular</h4>
             <ul className={styles.navItems}>
               {mostPopularLinks.map((link, idx) => (
                 <li key={idx}>
                   <Link
                     to={link.toLowerCase().trim().replaceAll(" ", "")}
                     key={idx}
+                    className={styles.mostPopularLinks}
                   >
                     {link}
                   </Link>

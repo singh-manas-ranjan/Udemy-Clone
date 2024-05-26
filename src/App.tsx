@@ -1,5 +1,3 @@
-import Cards from "./components/Cards/Cards";
-// import Banner from "./components/banner/Banner";
 import "./App.css";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/Navbar";
@@ -8,6 +6,7 @@ import SubHeader from "./components/SubHeader/SubHeader";
 import { useState } from "react";
 import MainNavLinks from "./assets/MainNavLinks";
 import MostPopularLinks from "./assets/MostPopularLinks";
+import CardCarousel from "./components/cardsCarousel/CardCarousel";
 
 const App = () => {
   const mainNavLinks = MainNavLinks;
@@ -30,7 +29,7 @@ const App = () => {
       <Hero />
       <SubHeader />
       <OvalButton />
-      <Cards />
+      <CardCarousel />
     </div>
   );
 };
