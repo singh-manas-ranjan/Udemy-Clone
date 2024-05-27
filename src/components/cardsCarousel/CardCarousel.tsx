@@ -27,17 +27,19 @@ const CardCarousel = () => {
     },
   };
   return (
-    <Carousel
-      responsive={responsive}
-      className={styles.carousel}
-      itemClass={styles.carouselItem}
-      swipeable={true}
-      draggable={true}
-    >
-      {CardsInfo.map((card, idx) => (
-        <Cards key={idx} card={card} />
-      ))}
-    </Carousel>
+    <div className={styles.carouselContainer}>
+      <Carousel
+        responsive={responsive}
+        className={styles.carousel}
+        itemClass={styles.carouselItem}
+        swipeable={true}
+        draggable={true}
+      >
+        {CardsInfo.map((card, idx) => (
+          <Cards key={idx} card={card} />
+        ))}
+      </Carousel>
+    </div>
   );
 };
 

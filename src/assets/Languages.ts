@@ -1,0 +1,1 @@
+export default ["English","日本語","Русский","Deutsch","한국인","ภาษาไทย", "Español", "Nederlands","Türkçe", "Français", "polski", "Tiếng Việt", "bahasa Indonesia", "Português", "中文(简体)", "Italiano", "Română", "中文(傳統的)"]

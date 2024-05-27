@@ -9,14 +9,18 @@ import { RxCross2 } from "react-icons/rx";
 interface Props {
   mainNavLinks: string[];
   mostPopularLinks: string[];
+  categoriesLink: string[];
   isNavActive: boolean;
   onNavIconClick: () => void;
+  onLanguageBtnClick: () => void;
 }
 const Navbar = ({
   mainNavLinks,
   isNavActive,
+  categoriesLink,
   onNavIconClick,
   mostPopularLinks,
+  onLanguageBtnClick,
 }: Props) => {
   return (
     <nav className={styles.navbar}>
@@ -26,7 +30,23 @@ const Navbar = ({
       <div className={styles.logo} />
       <div className={styles.outerNavItemsContainer}>
         <div className={styles.leftMenuContainer}>
-          <p className={styles.categoriesBtn}>Categories</p>
+          <ul className={styles.categoriesBtn}>
+            <li className={styles.categoriesBtnHover}>
+              Categories
+              <ul className={styles.categoriesBtnUl}>
+                {categoriesLink.map((link, idx) => (
+                  <li key={idx}>
+                    <Link
+                      key={idx}
+                      to={link.toLowerCase().trim().replaceAll(" ", "")}
+                    >
+                      {link}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          </ul>
           <div className={styles.searchContainer}>
             <div className={styles.search}>
               <IoMdSearch size={20} style={{ color: "gray" }} />
@@ -50,12 +70,23 @@ const Navbar = ({
             className={[styles.middleNavLink, styles.middleLink].join("")}
           >
             Udemy Business
+            <div className={styles.hoverDiv}>
+              <h4 className={styles.hoverDivText}>
+                Get your team access to over 25,000 top Udemy courses, anytime,
+                anywhere.
+              </h4>
+              <button className={styles.hoverDivBtn}>Try Udemy Business</button>
+            </div>
           </a>
-          <a
-            href="#"
-            className={[styles.middleNavLink, styles.lastLink].join("")}
-          >
+          <a href="#" className={styles.middleNavLink}>
             Tech on Udemy
+            <div className={styles.hoverDiv}>
+              <h4 className={styles.hoverDivText}>
+                Turn what you know into an opportunity and reach millions around
+                the world.
+              </h4>
+              <button className={styles.hoverDivBtn}>Learn more</button>
+            </div>
           </a>
         </div>
         <div className={styles.rightMenuContainer}>
@@ -81,7 +112,10 @@ const Navbar = ({
             <button className={[styles.actionBtn, styles.signUpBtn].join(" ")}>
               Sign up
             </button>
-            <span className={styles.language}>
+            <span
+              className={styles.language}
+              onClick={() => onLanguageBtnClick()}
+            >
               <IoGlobeOutline size={20} />
             </span>
           </div>

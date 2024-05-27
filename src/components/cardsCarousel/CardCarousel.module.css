@@ -1,3 +1,9 @@
+.carouselContainer{
+    width: 100%;
+    background-color: #f7f9fa;
+    display: grid;
+    place-items: center;
+}
 .carousel{
     margin-block: 20px;
     height: fit-content;

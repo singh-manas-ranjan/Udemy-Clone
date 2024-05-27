@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.overlayEnabled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: block;
+    background-color: #2d2f31d3;
+    display: grid;
+    place-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2d2f31;
+}
+
+.overlayDisabled{
+    display: none;
+}
+
+.languageContainer{
+    width: 600px;
+    height: 352px;
+    background-color: #fff;
+    opacity: 100%;
+    z-index: 9991;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.closeBtn{
+    display: grid;
+    place-content: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 1.4rem;
+    top: 1.4rem;
+    cursor: pointer;
+}
+
+.languageBox{
+    width: 536px;
+    height: calc(352px - 62px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    height: 48px;
+}
+
+.langFlex{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    row-gap: .2rem;
+}
+
+.languageItemsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    column-gap: .2rem;
+}
+
+.language{
+    width: calc(100% / 3);
+    text-align: left;
+    color: #2d2f31;
+    height: 100%;
+    padding: .5rem 0 0 1rem;
+    cursor: pointer;
+}
+
+.active{
+    border: .1px solid #2d2f31;
+}
