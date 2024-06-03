@@ -1,6 +1,6 @@
 import styles from "./TestimonialsContainer.module.css";
-import { Testimonial } from "../assets/TestimonialsData";
 import TestimonialCard from "./TestimonialCard";
+import { Testimonial } from "../../assets/TestimonialsData";
 
 interface Props {
   testimonials: Testimonial[];

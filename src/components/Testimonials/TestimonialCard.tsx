@@ -1,6 +1,6 @@
+import { Testimonial } from "../../assets/TestimonialsData";
 import styles from "./TestimonialCard.module.css";
 import { RiDoubleQuotesL } from "react-icons/ri";
-import { Testimonial } from "../assets/TestimonialsData";
 
 interface Props {
   testimonial: Testimonial;
