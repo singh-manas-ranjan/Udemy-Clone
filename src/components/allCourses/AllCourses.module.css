@@ -1,0 +1,43 @@
+.buttonContainer{
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    width: calc(100vw - 226px);
+    align-items: start;
+    margin-block: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.01rem;
+    padding-left: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.allCourses{
+    margin-block: 2rem;
+    all: unset;
+    padding: 1rem;
+    outline-style: solid;
+    outline-width: .01rem;
+    outline-color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.allCourses:hover{
+    background-color: #ecf1f5;
+}
+
+@media screen and (max-width: 1340px) {
+    .buttonContainer{
+        width: 100%;
+        padding-left: 0;
+        padding-inline: 1.6rem;
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .allCourses{
+        width: 100%;
+    }
+}

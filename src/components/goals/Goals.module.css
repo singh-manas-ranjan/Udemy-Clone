@@ -1,0 +1,123 @@
+.mainContainer{
+    width: 100%;
+    background-color: #f7f9fa;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.outerContainer{
+    width: calc(100vw - 226px);
+    padding: 3rem 1.5rem;
+}
+
+.innerContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading{
+    margin-bottom: 2rem;
+}
+
+.leftContainer{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 1rem;
+}
+
+.goalContainer{
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fff;
+    border: .1px solid rgb(215, 213, 213);
+    cursor: pointer;
+    padding: 2rem 0 2rem 2rem;
+    align-items: center;
+}
+
+.active{
+    outline-style: solid;
+    outline-width: .1px;
+    outline-color: #a435f0;
+    border-left: 6px solid #a435f0;
+}
+
+.titleContainer{
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.ePlanBtn{
+    color: #5624d0;
+    padding: .2rem .5rem;
+    border: 0;
+    border-radius: 4px;
+    outline-style: solid;
+    outline-width: .1px;
+    outline-color: #5624d0;
+    cursor: pointer;
+}
+
+.goalImgContainer{
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.description{
+    width: 100%;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .8rem;
+}
+
+.description > p{
+    line-height: 1.3rem;
+    color: gray;
+}
+
+.rightContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer{
+    width: 90%;
+}
+
+.rightImg{
+    object-fit: cover;
+    width: 100%;
+}
+
+.findMore{
+    display: flex;
+    align-items: end;
+    font-weight: bold;
+}
+
+.arrow{
+    margin-left: .5rem;
+}
+
+.goalContainer:hover{
+    background-color: #e4e8eb;
+}

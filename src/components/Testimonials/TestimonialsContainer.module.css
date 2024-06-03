@@ -1,0 +1,30 @@
+:root{
+    --grey-color: #6a6f73;
+}
+
+.mainContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background-color: #f7f9fa;
+}
+
+.outerContainer{
+    width: calc(100vw - 226px);
+    padding: 3rem 1.5rem;
+}
+
+.innerContainer{
+    display: grid;
+    row-gap: 2rem;
+}
+
+.heading{
+    font-family: initial;
+}
+
+.cardsContainer{
+    display: flex;
+    column-gap: 1.3rem;
+}

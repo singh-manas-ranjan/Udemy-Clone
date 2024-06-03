@@ -3,6 +3,7 @@ import styles from "./CardCarousel.module.css";
 import "react-multi-carousel/lib/styles.css";
 import CardsInfo from "../../assets/CardsInfo";
 import Cards from "../Cards/Cards";
+import AllCourses from "../allCourses/AllCourses";
 const CardCarousel = () => {
   const responsive = {
     superLargeDesktop: {
@@ -39,6 +40,7 @@ const CardCarousel = () => {
           <Cards key={idx} card={card} />
         ))}
       </Carousel>
+      <AllCourses />
     </div>
   );
 };

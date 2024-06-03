@@ -1,0 +1,55 @@
+.container{
+    padding-block: 4rem;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    color: #6a6f73;
+}
+
+.msg{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-inline: 1.5rem;
+}
+
+@media screen and (max-width: 1340px) {
+    .container {
+        width: 100%;
+        padding-inline: 20px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .logoContainer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        row-gap: 2rem;
+        column-gap: 1rem;
+    }
+
+    .msg{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    .logoContainer{
+        padding-right: 1rem;
+    }
+
+    .logo{
+        height: 50px;
+        width: 60px;
+    }
+}
+

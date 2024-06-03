@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.footer{
+    background-color: #2d2f31;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    padding-inline: 50px;
+    padding-block: 2rem;
+    color: #fff;
+    display: grid;
+    row-gap: 2rem;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headingContainer{
+    width: 40%;
+}
+
+.heading{
+    color: #fff;
+}
+
+.colorText{
+    color: #c0c4fc;
+}
+
+.logoContainer{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.items{
+    display: grid;
+    row-gap: .7rem;
+}
+
+.item{
+    font-size: .9rem;
+}
+
+.item:hover{
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.link{
+    color: #fff;
+}
+
+
+.btn{
+    background: none;
+    border: none;
+    outline-style: solid;
+    outline-width: .1px;
+    outline-color: #fff;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    padding-left: .8rem;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: 1.01rem;
+    cursor: pointer;
+}
+
+.end{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comLogoContainer{
+    width: 91px;
+    height: 34px;
+}
+
+.companyLogo{
+    object-fit: cover;
+    width: 100%;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}

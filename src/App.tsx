@@ -10,6 +10,18 @@ import CardCarousel from "./components/cardsCarousel/CardCarousel";
 import CategoriesData from "./assets/CategoriesData";
 import Language from "./components/language/Language";
 import Languages from "./assets/Languages";
+import PartnerLogos from "./components/partnerLogos/PartnerLogos";
+import Logos from "./assets/Logos";
+import GoalsList from "./assets/Goals";
+import Goals from "./components/goals/Goals";
+import SubscriptionPlans from "./assets/SubscriptionPlans";
+import Subscription from "./components/subscription/Subscription";
+import TestimonialsData from "./assets/TestimonialsData";
+import Banner from "./components/banner/Banner";
+import TrendReport from "./components/trendReport/TrendReport";
+import TestimonialsContainer from "./components/Testimonials/TestimonialsContainer";
+import Footer from "./components/footer/Footer";
+import FooterData from "./assets/FooterData";
 
 const App = () => {
   const mainNavLinks = MainNavLinks;
@@ -43,7 +55,7 @@ const App = () => {
 
   return (
     <div className="app">
-      {/* <Banner /> */}
+      <Banner />
       <Language
         languages={languageGroup}
         isLanguageActive={isLanguageActive}
@@ -63,6 +75,12 @@ const App = () => {
       <SubHeader />
       <OvalButton />
       <CardCarousel />
+      <PartnerLogos logos={Logos} />
+      <Goals goalsList={GoalsList} />
+      <Subscription plans={SubscriptionPlans} />
+      <TestimonialsContainer testimonials={TestimonialsData} />
+      <TrendReport />
+      <Footer footerData={FooterData} />
     </div>
   );
 };
